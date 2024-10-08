@@ -13,7 +13,7 @@ export const ThemeContext = createContext({
 /**
  * Description placeholder
  *
- * @param {{ children: any; }} param0
+ * @param {{ children: string; }} param0
  * @param {*} param0.children
  * @returns {*}
  */
