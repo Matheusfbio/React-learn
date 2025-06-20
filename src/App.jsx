@@ -1,15 +1,12 @@
-import Message from "./components/hooks/context/Messager";
 import ThemeContextProvider from "./components/hooks/context/theme-context";
-import UseCallback from "./components/hooks/UseCallback";
+import UserPage from "./features/users/pages/UserPage";
 
 function App() {
   return (
     <>
       <ThemeContextProvider>
-        <Message />
-        <UseCallback />
+        <UserPage />
       </ThemeContextProvider>
-      {/* <UseMemoFunction /> */}
     </>
   );
 }
