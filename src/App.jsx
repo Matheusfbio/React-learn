@@ -1,11 +1,12 @@
 import ThemeContextProvider from "./components/hooks/context/theme-context";
-import UserPage from "./features/users/pages/UserPage";
+import { UseState } from "./components/hooks/UseState";
 
 function App() {
   return (
     <>
       <ThemeContextProvider>
-        <UserPage />
+        {/* <UserPage /> */}
+        <UseState/>
       </ThemeContextProvider>
     </>
   );
