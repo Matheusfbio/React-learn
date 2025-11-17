@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { UseState } from "../hooks/UseState";
 
 export function UseEffect() {
   const [time, setTime] = useState(new Date());
