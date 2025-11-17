@@ -7,6 +7,9 @@
     "dev": "vite --host",
     "build": "vite build",
     "tauri": "tauri",
+    "tauri:dev": "./run-tauri.sh",
+    "android:init": "./init-android.sh",
+    "android:build": "./build-android.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

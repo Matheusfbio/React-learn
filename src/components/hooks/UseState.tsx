@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function UseState() {
+export function UseState({ nameComponent }: { nameComponent: string }) {
   const [counter, setCounter] = useState(0);
 
   //My logic initial
@@ -44,7 +44,7 @@ export function UseState() {
   return (
     <>
       <div>
-        <h1 className="p-4 flex">UseState</h1>
+        <h1 className="p-4 flex">{nameComponent}</h1>
       </div>
 
       <div>

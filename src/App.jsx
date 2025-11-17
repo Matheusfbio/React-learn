@@ -1,12 +1,12 @@
 import ThemeContextProvider from "./components/hooks/context/theme-context";
-import { UseState } from "./components/hooks/UseState";
-
+import { UseEffect } from "./components/hooks/UseEffect";
 function App() {
   return (
     <>
       <ThemeContextProvider>
         {/* <UserPage /> */}
-        <UseState/>
+        {/* <UseState/> */}
+        <UseEffect />
       </ThemeContextProvider>
     </>
   );
