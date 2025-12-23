@@ -9,6 +9,8 @@ import UseCallback from './components/hooks/UseCallback';
 import UseMemo from './components/hooks/UseMemo';
 import UseReducer from './components/hooks/useReducer';
 import UserPage from "./features/users/pages/UserPage"
+import Performance from './components/hooks/Performance';
+import Lab from './components/hooks/Lab';
 
 function Home() {
   const { theme } = useTheme();
@@ -88,6 +90,12 @@ function Dashboard() {
               <li style={{ marginBottom: '10px' }}>
                 <Link to="/usereducer" style={{ textDecoration: 'none', color: theme.text }}>🔧 useReducer</Link>
               </li>
+              <li style={{ marginBottom: '10px' }}>
+                <Link to="/performace" e style={{ textDecoration: 'none', color: theme.text }}>🔧 useCallBack + useMemo</Link>
+              </li>
+              <li style={{ marginBottom: '10px' }}>
+                <Link to="/lab" e style={{ textDecoration: 'none', color: theme.text }}>🔧 Laboratorio</Link>
+              </li>
             </ul>
           )}
         </nav>
@@ -128,6 +136,8 @@ function Dashboard() {
             <Route path="/usecallbackTeste" element={<UserPage />} />
             <Route path="/usememo" element={<UseMemo />} />
             <Route path="/usereducer" element={<UseReducer />} />
+            {/* <Route path="/performace" element={<Performance />} /> */}
+            <Route path="/lab" element={<Lab />} />
           </Routes>
         </main>
       </div>

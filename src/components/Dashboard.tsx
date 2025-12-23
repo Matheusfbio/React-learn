@@ -33,6 +33,11 @@ export default function Dashboard() {
       path: "/usereducer",
       description: "Estado complexo com reducer",
     },
+    {
+      name: "Lab",
+      path: "/lab",
+      description: "Laboratorio",
+    },
   ];
 
   return (
