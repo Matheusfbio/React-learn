@@ -1,5 +1,7 @@
 import { createContext, useContext } from "react";
-import Ref from "./ref";
+import Ref from "./example/ref";
+import UseEffectExample from "./example/useEffectExample";
+import UseMemoExample from "./example/useMemoExample";
 
 export const UserContext = createContext();
 
@@ -17,7 +19,13 @@ function Footer() {
 export default function Lab() {
   return (
     <UserContext.Provider value="Matheus">
+      <p>useMemoExample</p>
+      <UseMemoExample />
+      <p>useEffectExample</p>
+      <UseEffectExample />
+      <p>useRef Example</p>
       <Ref />
+      <p>useContext Example</p>
       <Header />
       <Footer />
     </UserContext.Provider>
